@@ -1,2 +1,2 @@
-# DnetBlazor-
+# DnetBlazor
 Components for Blazor
