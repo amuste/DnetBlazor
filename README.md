@@ -1,11 +1,11 @@
 # DnetBlazor
-Blazor component library
+Blazor component library. All components are written in C#. Only 6kb of js related to components.
 
 ### Demo
 https://www.datalnet.com
 
 ### Compatibility
-.Net 6.0
+.Net 6.0. Updated to 6.0.2
 
 Server-side Blazor and client-side Blazor
 
@@ -37,7 +37,7 @@ BaseZindex: Base z-index use by the Overlay component to display components on t
 
 4. Add the following to the Program.cs
 ```CSharp
-using Dnet.App.Shared.Infrastructure.Services;
+using Dnet.Blazor.Infrastructure.Services;
 ```
 ```CSharp
 builder.Services.AddDnetBlazor();
