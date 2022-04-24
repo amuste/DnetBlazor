@@ -1,13 +1,16 @@
 # DnetBlazor
-Blazor component library. All components are written in C#. Only 6kb of js related to components.
+Blazor component library. All components are written in C#.
 
 ### Demo
 https://www.datalnet.com
 
 ### Compatibility
-.Net 6.0. Updated to 6.0.2
+- .Net 6.0. Updated to 6.0.2
 
-Server-side Blazor and client-side Blazor
+- Server-side Blazor and Blazor WASM
+
+### Documentation
+No documentation available yet, but many examples in the source code.
 
 ## Using the library
 ### Installation
@@ -29,11 +32,16 @@ Server-side Blazor and client-side Blazor
 4. Add the following to the MainLayout.razor
 
 ```CSharp
-<DnetOverlay BaseZindex="1100"></DnetOverlay>
+<DnetOverlay BaseZindex="YourZIndexValue"></DnetOverlay>
 ```
 Many of the components in the library are based on the Dnet.Blazor.Overlay component. The overlay provides a way to open floating panels on the screen. Manages positioning, zindex, backdrops, etc. 
 
 BaseZindex: Base z-index use by the Overlay component to display components on the screen. Providing this guarantees that components will open with the correct z-index.
+
+eg.
+```CSharp
+<DnetOverlay BaseZindex="1100"></DnetOverlay>
+```
 
 4. Add the following to the Program.cs
 ```CSharp
